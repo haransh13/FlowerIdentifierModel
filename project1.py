@@ -25,10 +25,6 @@ print(dataset.head(20))
 print(dataset.describe())
 print(dataset.groupby('class').size())
 
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
-names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-dataset = read_csv(url, names=names)
-
 array = dataset.values
 X = array[:,0:4]
 y = array[:,4]
